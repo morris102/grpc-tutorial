@@ -1,0 +1,11 @@
+syntax="proto3";
+
+option go_package = "./pb";
+
+message Laptop{
+    string id =1;
+   string cpu =2;
+   string ram =3;
+   string ssd =4;
+   string gpu =5;
+}

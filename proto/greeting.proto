@@ -1,0 +1,18 @@
+syntax="proto3";
+
+option go_package = "./pb";
+
+import "lang.proto";
+
+message GreetingRequest {
+  string name =1;
+  Lang lang=2;
+}
+
+message GreetingResponse{
+    string content =1;
+}
+
+service GreetingService {
+  rpc SayGreeting(GreetingRequest) returns (GreetingResponse) {}
+}
